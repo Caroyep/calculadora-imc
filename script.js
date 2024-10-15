@@ -1,8 +1,8 @@
-// Lógica para calcular el IMC y mostrar recomendaciones
+// calcula IMC y mostrar recomendaciones
 document.getElementById("formIMC").addEventListener("submit", function(event) {
     event.preventDefault(); // Evitar que el formulario se envíe
 
-    // Obtener los valores ingresados por el usuario
+    // Obtener los valores ingresados por usuario
     const nombre = document.getElementById("nombre").value;
     const genero = document.getElementById("genero").value;
     const peso = parseFloat(document.getElementById("peso").value);
@@ -53,7 +53,7 @@ document.getElementById("formIMC").addEventListener("submit", function(event) {
     document.getElementById("nuevoCalculo").classList.remove("hidden");
 });
 
-// Lógica para reiniciar el formulario cuando se hace clic en "Nuevo cálculo"
+// reiniciar el formulario cuando se hace clic en "Nuevo cálculo"
 document.getElementById("nuevoCalculo").addEventListener("click", function() {
     // Resetear el formulario
     document.getElementById("formIMC").reset();
@@ -61,7 +61,6 @@ document.getElementById("nuevoCalculo").addEventListener("click", function() {
     // Limpiar el resultado
     document.getElementById("resultado").innerHTML = "";
 
-    // Ocultar el botón de nuevo cálculo nuevamente
+    // Ocultar otra vez el botón de nuevo cálculo
     document.getElementById("nuevoCalculo").classList.add("hidden");
 });
-
