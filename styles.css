@@ -1,7 +1,7 @@
-/* Estilos del contenedor principal */
+/* Estilos del contenedor principal*/
 .container {
-    max-width: 400px; /* Limitar el ancho para evitar desbordamiento */
-    margin: 0 auto;   /* Centramos el contenedor */
+    max-width: 400px; /*Limitar el ancho para evitar desbordamiento*/
+    margin: 0 auto;   /*Centra el contenedor*/
     padding: 20px;
     background-color: #f4f4f4;
     border-radius: 10px;
@@ -23,7 +23,7 @@ input, select, button {
     border-radius: 5px;
     border: 1px solid #ccc;
     font-size: 14px;
-    box-sizing: border-box; /* Para que el padding no cause desbordamiento */
+    box-sizing: border-box; /* Para que el padding no se desborde*/
 }
 
 input:focus, select:focus, button:focus {
@@ -44,7 +44,7 @@ button:hover {
     background-color: #218838;
 }
 
-/* Botón para nuevo cálculo, oculto inicialmente */
+/*Botón para nuevo cálculo, oculto inicialmente*/
 .hidden {
     display: none;
 }
@@ -60,7 +60,7 @@ button:hover {
     cursor: pointer;
 }
 
-/* Efecto hover (cuando el usuario pasa el ratón sobre el botón) */
+/*Efecto hover (cuando el usuario pasa el ratón sobre el botón) */
 #nuevoCalculo:hover {
     background-color: #e68900; /* Un naranja más oscuro al pasar el ratón */
 }
@@ -73,9 +73,9 @@ button:hover {
     color: #333;
 }
 
-/* Imagen centrada horizontalmente */
+/* Imagen centrada horizontalmente*/
 .imagen-logo {
-    display: block; /* Esto es importante para que margin: auto funcione */
+    display: block; /*margin: auto funcione */
     margin: 20px auto 0; /* Márgenes arriba y centrados */
     width: 100px;
 }
@@ -103,5 +103,3 @@ footer {
         font-size: 14px;
     }
 }
-
-
