@@ -1,0 +1,107 @@
+/* Estilos del contenedor principal */
+.container {
+    max-width: 400px; /* Limitar el ancho para evitar desbordamiento */
+    margin: 0 auto;   /* Centramos el contenedor */
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos de los campos del formulario */
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    box-sizing: border-box; /* Para que el padding no cause desbordamiento */
+}
+
+input:focus, select:focus, button:focus {
+    outline: none;
+    border-color: #28a745;
+}
+
+/* Botón */
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Botón para nuevo cálculo, oculto inicialmente */
+.hidden {
+    display: none;
+}
+
+/* Estilo del botón "Nuevo cálculo" */
+#nuevoCalculo {
+    background-color: #ff9800; /* Color naranja */
+    color: white; /* Color del texto */
+    border: none; /* Eliminar el borde */
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Efecto hover (cuando el usuario pasa el ratón sobre el botón) */
+#nuevoCalculo:hover {
+    background-color: #e68900; /* Un naranja más oscuro al pasar el ratón */
+}
+
+/* Resultados */
+.resultado {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Imagen centrada horizontalmente */
+.imagen-logo {
+    display: block; /* Esto es importante para que margin: auto funcione */
+    margin: 20px auto 0; /* Márgenes arriba y centrados */
+    width: 100px;
+}
+
+/* Pie de página */
+footer {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #666;
+    text-align: center;
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 500px) {
+    .container {
+        padding: 15px;
+    }
+
+    input, select, button {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
+
+
